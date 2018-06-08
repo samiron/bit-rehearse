@@ -1,6 +1,4 @@
-package com.spaul.algorithms;
-
-import sun.misc.Sort;
+package org.samiron.algorithms;
 
 import java.util.Random;
 

@@ -1,7 +1,4 @@
-package com.spaul.patterns.visitor;
-
-import java.util.ArrayList;
-import java.util.Collection;
+package org.samiron.patterns.visitor;
 
 /**
  * Created by samir on 4/9/2017.

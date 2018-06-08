@@ -1,10 +1,10 @@
-package com.spaul.patterns.visitor;
+package org.samiron.patterns.visitor;
 
 /**
  * Created by samir on 4/9/2017.
  */
-public class Apple extends Fruit{
-    public Apple(String s) {
+public class Banana extends Fruit{
+    public Banana(String s) {
         super(s);
     }
 

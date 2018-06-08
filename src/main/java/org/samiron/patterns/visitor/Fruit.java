@@ -1,4 +1,4 @@
-package com.spaul.patterns.visitor;
+package org.samiron.patterns.visitor;
 
 /**
  * Created by samir on 4/9/2017.

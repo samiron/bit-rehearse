@@ -1,4 +1,4 @@
-package com.spaul.algorithms;
+package org.samiron.algorithms;
 
 import java.io.IOException;
 import java.io.InputStreamReader;

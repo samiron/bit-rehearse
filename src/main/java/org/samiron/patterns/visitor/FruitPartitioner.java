@@ -1,4 +1,4 @@
-package com.spaul.patterns.visitor;
+package org.samiron.patterns.visitor;
 
 import java.util.ArrayList;
 import java.util.Collection;
