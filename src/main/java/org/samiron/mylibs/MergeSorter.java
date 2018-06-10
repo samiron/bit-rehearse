@@ -1,19 +1,12 @@
 package org.samiron.mylibs;
 
-public class MergeSorter<T extends Comparable> {
-
-    private T[] items;
+public class MergeSorter<T extends Comparable> extends Sorters<T> {
 
     public MergeSorter(T[] items) {
-        this.items = items;
+        super(items);
     }
 
-    public void show() {
-        for (T i : items) {
-            System.out.println(i);
-        }
-    }
-
+    @Override
     public void sort() {
         mergeSort(0, items.length - 1);
     }
@@ -50,12 +43,6 @@ public class MergeSorter<T extends Comparable> {
                 break;
             }
         }
-    }
-
-    private void swap(int i, int j) {
-        T temp = this.items[i];
-        this.items[i] = this.items[j];
-        this.items[j] = temp;
     }
 
     /**

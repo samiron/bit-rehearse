@@ -28,9 +28,10 @@ public class QuickSortMain {
         int p2 = right;
         int pivot = this.numbers[left];
 
+        /** p1-1 is the pivot element **/
         while((p1 <= p2)){
-            while(this.numbers[p1] >= pivot && (p1 < right)){ p1++;}
-            while(this.numbers[p2] < pivot && (p2 > left)){ p2--;}
+            while(this.numbers[p1] <= pivot && (p1 < right)){ p1++;}
+            while(this.numbers[p2] > pivot && (p2 > left)){ p2--;}
             if(p1 <= p2){
                 this._swap(p1, p2);
                 p1++;
