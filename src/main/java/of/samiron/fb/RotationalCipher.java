@@ -9,6 +9,10 @@ public class RotationalCipher {
 
 	String rotationalCipher(String input, int rotationFactor) {
 
+		if(rotationFactor == 0) {
+			return input;
+		}
+
 		StringBuilder sb = new StringBuilder();
 		for(char ch : input.toCharArray()){
 			sb.append(rotate(ch, rotationFactor));
@@ -107,6 +111,12 @@ public class RotationalCipher {
 		String expected_5 = "nopqrstuvwxyzABCDEFGHIJKLM";
 		String output_5 = rotationalCipher(input_5, rotationFactor_5);
 		check(expected_5, output_5);
+
+		String input_6 = "abcdefghijklmNOPQRSTUVWXYZ";
+		int rotationFactor_6 = 0 ;//39;
+		String expected_6 = "abcdefghijklmNOPQRSTUVWXYZ";
+		String output_6 = rotationalCipher(input_6, rotationFactor_6);
+		check(expected_6, output_6);
 
 
 	}
