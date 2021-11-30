@@ -12,7 +12,6 @@ public class BoardBuilder {
     }
 
     private ChessPiece[] buildPieces(ChessPieceFactory factory){
-
-
+        return null;
     }
 }
