@@ -1,4 +1,4 @@
-package org.samiron.patterns.factories.chess;
+package of.samiron.patterns.factories.chess;
 
 import java.util.Scanner;
 
