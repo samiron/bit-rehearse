@@ -20,7 +20,10 @@ public class ChessMain {
                 remotePieceFactory = new WhitePieceFactory();
             }
 
-            ChessBoard board = new BoardBuilder().buildBoard(selfPieceFactory, remotePieceFactory);
+            ChessBoard board = new BoardBuilder()
+                    .setSelfPieceFactory(selfPieceFactory)
+                    .setRemotePieceFactory(remotePieceFactory)
+                    .buildBoard();
             board.show(System.out);
 
             askInput();
