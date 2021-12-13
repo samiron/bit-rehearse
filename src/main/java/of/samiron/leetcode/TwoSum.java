@@ -1,5 +1,7 @@
 package of.samiron.leetcode;
 
+import java.util.HashMap;
+
 /**
  * https://leetcode.com/problems/two-sum/
  */
@@ -15,8 +17,12 @@ public class TwoSum {
         int[] arr = new int[]{-1, -2, -3, -4, -5};
         int target = -8;
         TwoSum ob = new TwoSum();
+
         int[] result = ob.twoSum(arr, target);
         System.out.printf("[%d, %d]", result[0], result[1]);
+
+        int[] result2 = ob.twoSum_2(arr, target);
+        System.out.printf("[%d, %d]", result2[0], result2[1]);
     }
 
     private static final int OFFSET = 500;
@@ -34,6 +40,29 @@ public class TwoSum {
 
             }
         }
+        return result;
+    }
+
+    /**
+     *
+     */
+    public int[] twoSum_2(int[] nums, int target) {
+
+        int[] result = new int[2];
+        HashMap<Integer, Integer> diffMap = new HashMap<>();
+
+        for(int i = 0 ; i< nums.length ; i++){
+            int n = nums[i];
+            int diff = target - n;
+            if(diffMap.containsKey(diff)) {
+                result[0] = diffMap.get(diff);
+                result[1] = i;
+                return result;
+            } else {
+                diffMap.put(n, i);
+            }
+        }
+
         return result;
     }
 
