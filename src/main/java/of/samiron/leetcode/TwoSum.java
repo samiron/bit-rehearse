@@ -1,6 +1,8 @@
 package of.samiron.leetcode;
 
-
+/**
+ * https://leetcode.com/problems/two-sum/
+ */
 public class TwoSum {
 
     public static void main(String[] args) {
